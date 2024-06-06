@@ -14,7 +14,18 @@ mamba create --name copernicusmarine conda-forge::copernicusmarine --yes
 ### Option 2 - specification file (faster)
 
 ```
+git clone git@github.com:anto6715/MdsSubset.git mds_subset
+cd mds_subset
 conda create --name copernicusmarine --file spec_copernicusmarine.txt
+```
+
+### Update copernicusmarine toolbox
+
+It is recommended to update regularly if new version of copernicusmarine toolbox are available:
+
+```shell
+conda activate copernicusmarine
+conda update --name copernicusmarine copernicusmarine --yes
 ```
 
 ---
@@ -23,6 +34,7 @@ conda create --name copernicusmarine --file spec_copernicusmarine.txt
 To create the configuration file, please run the command:
 
 ```shell
+conda activate copernicusmarine
 copernicusmarine login
 ```
 
@@ -69,6 +81,7 @@ Options:
 **Example**
 
 ```shell
+conda activate copernicusmarine
 ./mds.py subset-manual -f output.nc -o . -i cmems_mod_glo_phy-thetao_anfc_0.083deg_P1D-m -x -18.16666 -X 1 -y 30.16667 -Y 46 -z 0.494025 -Z 5727.917 -t 2024-01-01 -T 2024-01-01 -v thetao 
 ```
 
@@ -78,5 +91,6 @@ An example file is: [sample.json](sample.json)
 
 To use it, use the following command:
 ```shell
+conda activate copernicusmarine
 ./mds.py subset-json sample.json
 ```
