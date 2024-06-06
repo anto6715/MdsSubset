@@ -1,0 +1,28 @@
+[
+  {
+    "output_filename": "output_thetao_from_config.nc",
+    "dataset_id": "cmems_mod_glo_phy-thetao_anfc_0.083deg_P1D-m",
+    "variables": ["thetao"],
+    "minimum_longitude": -18.16666,
+    "maximum_longitude": 1,
+    "minimum_latitude": 30.16667,
+    "maximum_latitude": 46,
+    "minimum_depth": 0.494025,
+    "maximum_depth": 5727.917,
+    "start_datetime": "2024-01-01",
+    "end_datetime": "2024-01-01"
+  },
+  {
+    "output_filename": "output_cur_from_config.nc",
+    "dataset_id": "cmems_mod_glo_phy-cur_anfc_0.083deg_P1D-m",
+    "variables": ["uo", "vo"],
+    "minimum_longitude": -18.16666,
+    "maximum_longitude": 1,
+    "minimum_latitude": 30.16667,
+    "maximum_latitude": 46,
+    "minimum_depth": 0.494025,
+    "maximum_depth": 5727.917,
+    "start_datetime": "2024-01-01",
+    "end_datetime": "2024-01-01"
+  }
+]
